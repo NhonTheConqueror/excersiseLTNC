@@ -11,8 +11,8 @@ public class EmployeeManagement {
 		System.out.println(a.workYears(2010));
 		IEmployee[] EList = new IEmployee[4];
 		
-		for(i=0;i<4;i++) {
-			
+		for(int i=0;i<4;i++) {
+			break;
 		}
 		
 	}
