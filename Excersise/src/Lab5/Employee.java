@@ -1,5 +1,7 @@
 package Lab5;
 
+import java.util.Comparator;
+
 public abstract class Employee implements IEmployee{
 	protected String name;
 	protected HiredDate date;
@@ -15,7 +17,7 @@ public abstract class Employee implements IEmployee{
 	
 	@Override
 	public boolean sameName(IEmployee a) {
-		if(this.name==a.getName()) {return true;}
+		if(this.name == a.getName()) {return true;}
 		return false;
 	}
 	
@@ -23,6 +25,7 @@ public abstract class Employee implements IEmployee{
 	public int workYears(int toYear) {
 		return (toYear - this.date.getYear()); 
 	}
-	
+
+
 	
 }
