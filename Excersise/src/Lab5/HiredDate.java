@@ -1,4 +1,5 @@
 package Lab5;
+import MyTools.Input;
 
 public class HiredDate {
 	public int day, mont, year;
@@ -11,6 +12,15 @@ public class HiredDate {
 
 	public int getYear() {
 		return this.year;
+	}
+
+	public void setDate() {
+		
+		System.out.println("Day/Mont/Year hired: ");
+		this.day = Input.nextInt();
+		this.mont = Input.nextInt();
+		this.year = Input.nextInt();
+		return;
 	}
 	
 }
