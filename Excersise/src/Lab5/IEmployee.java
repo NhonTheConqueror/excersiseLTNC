@@ -15,6 +15,8 @@ public interface IEmployee {
 		double annualSalary;
 		int stockOpt;
 		
+		Input.nextLine(); // CLEAR THE buffer
+		
 		System.out.println("Name: ");
 		name = Input.nextLine();
 		
@@ -36,6 +38,8 @@ public interface IEmployee {
 		HiredDate date = new HiredDate(0, 0, 0);
 		double hourlyRate;
 		double primaryHours;
+		
+		Input.nextLine(); // CLEAR THE buffer
 		
 		System.out.println("Name: ");
 		name = Input.nextLine();

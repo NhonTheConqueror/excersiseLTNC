@@ -16,7 +16,7 @@ public class HiredDate {
 
 	public void setDate() {
 		
-		System.out.println("Day/Mont/Year hired: ");
+		System.out.println("Day Month Year hired: ");
 		this.day = Input.nextInt();
 		this.mont = Input.nextInt();
 		this.year = Input.nextInt();

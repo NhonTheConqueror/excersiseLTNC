@@ -11,7 +11,7 @@ public class EmployeeManagement {
 		IEmployee b = new HourlyEmployee("Nhon", date, 0, 0);
 		//System.out.println(a.sameName(b));
 		//System.out.println(a.workYears(2010));
-		IEmployee[] EList = new IEmployee[10];
+		IEmployee[] EList = new IEmployee[2];
 		
 		System.out.println("Choose 1 for Full time\n"+
 				"       "+"2 for Part time\n"+"       "+
@@ -24,11 +24,14 @@ public class EmployeeManagement {
 			
 			switch(Input.nextInt()) {
 			
-			case(1): {EList[i] = IEmployee.addFullTimeEmpl();}
+				case(1): {EList[i] = IEmployee.addFullTimeEmpl();
+				break;}
 			
-			case(2): {EList[i] = IEmployee.addPartTimeEmpl();}
+				case(2): {EList[i] = IEmployee.addPartTimeEmpl();
+				break;}
 			
-			default: {EList[i] = IEmployee.addConsultant();}
+				default: {EList[i] = IEmployee.addConsultant();
+				break;}
 			
 			}
 		}
