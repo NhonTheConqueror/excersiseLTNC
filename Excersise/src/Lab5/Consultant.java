@@ -3,6 +3,9 @@ package Lab5;
 public class Consultant extends Employee{
 	private int contractNumber;
 	private double billingRate;
+	/*
+	 * String name, HiredDate date, int contractNumber, double billingRate
+	 */
 	public Consultant(String name, HiredDate date, int contractNumber, double billingRate) {
 		super(name, date);
 		this.contractNumber = contractNumber;

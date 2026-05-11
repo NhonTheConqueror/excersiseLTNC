@@ -1,40 +1,30 @@
 package Lab5;
 
+import java.util.Arrays;
+
 import MyTools.Input;
+
+
+
 
 public class EmployeeManagement {
 	
 	
 	public static void main(String[] args) {
-		HiredDate date = new HiredDate(0, 0, 2007);
-		IEmployee a = new SalaryEmployee("Nhon", date, 0, 0);
-		IEmployee b = new HourlyEmployee("Nhon", date, 0, 0);
-		//System.out.println(a.sameName(b));
-		//System.out.println(a.workYears(2010));
-		IEmployee[] EList = new IEmployee[2];
-		
-		System.out.println("Choose 1 for Full time\n"+
-				"       "+"2 for Part time\n"+"       "+
-							"other numbers for Consultant.\n");
-		
-		for(int i=0;i<10;i++) {
-			
-			System.out.println("Employee number "
-					+ Integer.toString(i+1) + " :");
-			
-			switch(Input.nextInt()) {
-			
-				case(1): {EList[i] = IEmployee.addFullTimeEmpl();
-				break;}
-			
-				case(2): {EList[i] = IEmployee.addPartTimeEmpl();
-				break;}
-			
-				default: {EList[i] = IEmployee.addConsultant();
-				break;}
-			
-			}
+		//create an array of 3 employees
+		Employee[] EList = new Employee[3];
+		EList[0] = new SalaryEmployee("Nhon",
+				new HiredDate(1, 1, 2000), 120000, 1000);
+		EList[1] = new HourlyEmployee("Ha",
+				new HiredDate(1, 12, 2001), 100, 160);
+		EList[2] = new Consultant("Linh",
+				new HiredDate(1, 11, 2004), 5000,10.9);
+		Arrays.sort(EList);
+		for(Employee i: EList) {
+			System.out.println(i.getName());
 		}
+		
+
 		
 	}
 }
