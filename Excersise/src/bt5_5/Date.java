@@ -32,11 +32,7 @@ public class Date {
 		return ans;
 	}
 	
-	
-//	public static void main(String[] agrs){
-//		System.out.println(Date.formatDate("01/2/2000"));
-//		
-//	}
+
 	
 }
 
