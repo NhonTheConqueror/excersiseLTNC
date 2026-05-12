@@ -3,9 +3,9 @@ package ltnc7;
 import java.util.ArrayList;
 
 public class testCD {
-	private static void main(String[] args) {
-		ArrayList<CD> list_Cd = new ArrayList<CD>();
-		list_Cd.add(CD.addCD());
-		System.out.println(list_Cd);
+	public static void main(String[] agrs) {
+		CD[] list = new CD[3];
+		list[0] = CD.addCD(333,"gkG","nhon",99,9843.4, list);
+		
 	}
 }

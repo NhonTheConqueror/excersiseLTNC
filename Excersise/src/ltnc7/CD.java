@@ -28,19 +28,15 @@ public class CD {
 	public CD() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public static CD addCD() {
-		Scanner scanner = new Scanner(System.in);
-		int id = scanner.nextInt();
-		scanner.nextLine();
-		String name = scanner.nextLine();
-		scanner.nextLine();
-		String singers = scanner.nextLine();
-		scanner.nextLine();
-		int songs = scanner.nextInt();
-		scanner.nextLine();
-		double price = scanner.nextDouble();
-		return new CD(id,name,singers,songs,price);
+	
+	
+	
+	
+	public static CD addCD(int id,String name,String singer, int songs, double price, CD[] list) {
+		for(CD c:list) {
+			
+		}
+		return new CD(id,name,singer,songs,price);
 	}
 	
 	
